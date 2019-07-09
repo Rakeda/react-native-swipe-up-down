@@ -7,7 +7,7 @@ export default class SwipeIcon extends Component {
     super(props);
     this.state = {
       icon: images.minus,
-      showIcon: false
+      showIcon: true
     };
   }
   componentDidMount() {
@@ -25,7 +25,7 @@ export default class SwipeIcon extends Component {
         {showIcon && (
           <Image
             source={icon}
-            style={{ width: 35, height: icon === images.minus ? 5 : 10 }}
+            style={{ width: 35, height: icon === images.minus ? 5 : 10, tintColor: '#56a5ff' }}
           />
         )}
       </View>
