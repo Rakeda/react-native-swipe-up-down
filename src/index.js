@@ -136,7 +136,7 @@ export default class SwipeUpDown extends Component<Props> {
       ? DEVICE_HEIGHT - this.SWIPE_HEIGHT - 45
       : DEVICE_HEIGHT;
     this.customStyle.style.height = itemMini ? this.SWIPE_HEIGHT : 0;
-    this.swipeIconRef && this.swipeIconRef.setState({ showIcon: false });
+    this.swipeIconRef && this.swipeIconRef.setState({ showIcon: true });
     this.updateNativeProps();
     !this.state.collapsed && this.setState({ collapsed: true });
     this.checkCollapsed = true;
